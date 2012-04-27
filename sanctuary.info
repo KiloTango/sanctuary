@@ -1,0 +1,39 @@
+name = Sanctuary
+description = City of Sanctuary Theme, implemented as a sub-theme of Basic.
+screenshot = screenshot.png
+version = 1.0
+core = 6.x
+engine = phptemplate
+base theme = basic
+
+regions[header_top] = Header top
+regions[header_main] = Header main
+regions[header_second] = Header right
+
+regions[content_top] = Content top
+
+regions[left] = First sidebar
+regions[right] = Second sidebar
+
+regions[content_bottom] = Content bottom
+regions[footer_block] = Footer
+
+features[] = name
+features[] = slogan
+features[] = mission
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+
+stylesheets[all][]   = css/global.css
+stylesheets[all][]   = css/layout.css
+stylesheets[all][]   = css/fonts/willing-race-regular.css
+stylesheets[screen and (min-width: 320px)][]   = css/responsive.320.css
+stylesheets[screen and (min-width: 640px)][]   = css/responsive.640.css
+stylesheets[screen and (min-width: 960px)][]   = css/responsive.960.css
+
+scripts[] = js/sanctuary.js
+scripts[] = js/libs/jquery.formalize.min.js
+scripts[] = js/plugins.js
+scripts[] = js/mylibs/helper.js

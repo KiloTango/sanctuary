@@ -1,0 +1,43 @@
+/**
+ * Major layout styles
+ */
+
+/* set over-all page width */
+.page-region > .inner {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* share some common styles among elements which make up the grid */
+.page-region > .inner > .blocks,
+#main,
+.breadcrumb, #search-box {
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+#search-box { float: right;}
+#header-top { float: none; }
+.inner { overflow: hidden; }
+
+/* set generalised widths for major layout elements, adjusting for which are present */
+.no-sidebars #main { width: 100%; }
+.one-sidebar #main { width: 80%; }
+.two-sidebars #main { width: 60%; }
+#sidebar-first { width: 20%; }
+#sidebar-second { width: 20%; }
+#header-main, .breadcrumb { width: 70%; }
+#header-second { width: 30%; }
+
+/* pull major layout elements into the right visual order */
+.sidebar-first #main, .two-sidebars #main { left: 20% }
+#sidebar-first { left: -60%; }
+
+/* white space */
+#sidebar-first > .inner {
+  padding-right: 20px;
+}
+#sidebar-second > .inner {
+  padding-left: 20px;
+}

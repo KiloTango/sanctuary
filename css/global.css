@@ -1,0 +1,63 @@
+/**
+ * Reset styles
+ */
+
+/* "Basic" theme resets */
+#sidebar-first, #sidebar-second { background: transparent; }
+
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1, h2, h3, h4 {
+  font-family: "WillingRaceRegular", serif;
+  font-weight: normal;
+}
+#search-box label, #search-box .form-submit {
+  display: none;
+}
+div.block .edit {
+  right: 1px;
+  top: 1px;
+  padding: 2px 2px 0;
+  line-height: 14px;
+}
+
+
+/* Horizontal navigation tabs - generalised, unskinned layout */
+
+header ul.menu {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+header ul.menu li {
+  list-style: none;
+  margin: 0 0.5em 0 0; padding: 0;
+  float: left;
+}
+header ul.menu li a {
+  display: block;
+  border: 1px solid #ddd;
+  background: #eee;
+  padding: 0.5em 1em;
+}
+
+/* Vertical "button" navigation links - generalised, unskinned layout */
+
+.view-group-pages ul {
+  margin: 0;
+  padding: 0;
+}
+.view-group-pages .item-list ul li {
+  list-style: none;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+.view-group-pages .item-list ul li a {
+  display: block;
+  border: 1px solid #ddd;
+  background: #eee;
+  padding: 0.5em 1em;
+}
+
